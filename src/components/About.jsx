@@ -1,17 +1,17 @@
 
 import React from 'react';
-class About extends React.Component {
-    render() { 
+
+function About(props){
         //const {image} = this.props
         //const{about} = this.props
-        return <div>
+        return (<div>
             <aside>
-            <img src={this.props.image} alt={'blog logo'}/>
-            <p>{this.props.about}</p>
-            <h1></h1>
+            <img src={props.image} alt={'blog logo'}/>
+            <p>{props.about}</p>
+            
             </aside>
-        </div>;
+        </div>);
     }
-}
+
 About.defaultProps = {image:"https://via.placeholder.com/215"}
 export default About;
